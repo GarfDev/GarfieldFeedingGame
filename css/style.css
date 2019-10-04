@@ -1,0 +1,26 @@
+.modal.modal-wide .modal-dialog {
+    width: 90%;
+  }
+  .modal-wide .modal-body {
+    overflow-y: auto;
+  }
+
+  .historyBoard{
+    position: fixed;
+    background-color: red;
+    max-width: 100px;
+    max-height: 400px;
+    left: 10px;
+    top: 20px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+  }
+
+  .modal-header{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column;
+  }
