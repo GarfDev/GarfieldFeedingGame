@@ -1,6 +1,7 @@
 # CoderSchool FTW - * Nguyen Gia Tuan, Garfield Feeding Game
 
 Created with love by: Nguyen Gia Tuan
+
 Nestify link: https://wonderful-pasteur-7113c1.netlify.com/
   
 This is a simple Canvas-based game that requires a solid understanding of the principles of JavaScript programming to customize. 
