@@ -24,3 +24,10 @@
     align-items: center !important;
     flex-direction: column;
   }
+
+  .modal-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }

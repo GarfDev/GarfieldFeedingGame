@@ -11,7 +11,7 @@ We also load all of our images.
 let CurrentSession = {}
 let canvas;
 let ctx;
-
+var audio = new Audio('Chicken.mp3');
 canvas = document.createElement("canvas");
 canvas.style = "position:absolute; top:10%;left: 50%; margin-left: -250px;";
 ctx = canvas.getContext("2d");
@@ -327,7 +327,7 @@ var render = function () {
   if (TheTableReally) {
     ctx.drawImage(TheTableImage, TheTableX, TheTableY);
   }
-  ctx.font = "10px Verdana";
+  ctx.font = "14px Verdana";
   if (CurrentSession.isGameOver === false) {
     let Remaining = ctx.fillText(`Seconds Remaining: ${SECONDS_PER_ROUND - elapsedTime}`, canvas.width / 2 - 50, 100);
   } else {
@@ -346,6 +346,7 @@ var render = function () {
 let main = function () {
   update();
   render();
+  audio.play()
   ///Break the game if time down to 0
 
   if (elapsedTime >= 30) {
